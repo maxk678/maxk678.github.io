@@ -1,0 +1,18 @@
+/* ═══════════════════════════════════════════════════════════════
+   FONTS — Navy/modern palette edition
+   
+   Pairing: Fraunces (expressive serif) + DM Sans (clean geometric)
+   + DM Mono (technical mono)
+   
+   Fraunces is a optical-size variable serif — modern, distinctive,
+   used by brands like Notion and Linear. Much sharper than Playfair
+   for a clean/modern direction.
+   ═══════════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.bunny.net/css?family=fraunces:400,400i,600,700,700i&family=dm-sans:300,400,500&family=dm-mono:400,500&display=swap');
+
+:root {
+  --font-serif: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans:  'DM Sans', 'Gill Sans', Calibri, Optima, 'Segoe UI', system-ui, sans-serif;
+  --font-mono:  'DM Mono', 'Cascadia Code', 'Fira Code', 'Courier New', monospace;
+}
