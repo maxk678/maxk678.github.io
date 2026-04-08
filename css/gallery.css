@@ -1,0 +1,269 @@
+/* ============================================================
+   GALLERY + MODAL — layers on top of existing style.css
+   Does not modify any existing styles
+   ============================================================ */
+
+/* ── GALLERY GRID ────────────────────────────────────────────── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.gcard {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--gray-800);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gcard:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-border);
+  box-shadow: var(--shadow-md);
+}
+
+.gcard-img {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gray-900);
+}
+
+.gcard-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gcard:hover .gcard-img img {
+  transform: scale(1.02);
+}
+
+.gcard-footer {
+  padding: 14px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gcard-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 5px;
+}
+
+.gcard-name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+/* ── MODAL OVERLAY ───────────────────────────────────────────── */
+.gallery-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 26, 0.8);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.gallery-overlay.active {
+  display: flex;
+}
+
+.gallery-modal {
+  background: var(--gray-900);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  width: 100%;
+  max-width: 680px;
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ── MODAL INTERNALS ─────────────────────────────────────────── */
+.modal-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.modal-hero-placeholder {
+  width: 100%;
+  height: 200px;
+}
+
+.modal-body {
+  padding: 1.75rem 2rem;
+}
+
+.modal-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 10px;
+}
+
+.modal-title {
+  font-family: var(--font-serif);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.modal-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 1.125rem;
+}
+
+.modal-pill {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  padding: 5px 12px;
+  border-radius: 3px;
+  background: var(--gold-muted);
+  color: var(--gold-light);
+  border: 1px solid var(--gold-border);
+  text-transform: uppercase;
+}
+
+.modal-desc {
+  font-size: 1.25rem;
+  color: var(--gray-200);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.modal-close {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-300);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 7px 18px;
+  border-radius: 3px;
+  background: transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.modal-close:hover {
+  border-color: var(--gold-border);
+  color: var(--gold-light);
+}
+
+.modal-footer {
+  padding: 1.125rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ── BOOK MODAL LAYOUT ───────────────────────────────────────── */
+.modal-book-layout {
+  display: flex;
+  gap: 1.75rem;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.modal-book-cover {
+  width: 200px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.modal-book-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.modal-book-info {
+  flex: 1;
+  padding-top: 0.25rem;
+}
+
+.modal-author {
+  font-size: 1.25rem;
+  color: var(--gray-300);
+  margin-bottom: 0.625rem;
+}
+
+.modal-stars {
+  color: var(--gold);
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 0.875rem;
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .gallery-modal {
+    max-width: 100%;
+  }
+
+  .modal-book-layout {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .modal-book-cover {
+    width: 110px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-overlay {
+    padding: 0.75rem;
+    align-items: flex-end;
+  }
+
+  .gallery-modal {
+    max-height: 88vh;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  }
+
+  .modal-body {
+    padding: 1.25rem;
+  }
+
+  .modal-book-layout {
+    padding: 1.25rem;
+  }
+
+  .modal-footer {
+    padding: 1rem 1.25rem;
+  }
+}

@@ -1,0 +1,93 @@
+[
+    {
+    "id": "deer",
+    "type": "craft",
+    "tag": "Fibert arts · Filet Crochet",
+    "title": "Work in Progress",
+    "img": "assets/images/Deer_filet.png",
+    "meta": ["Cotton", "Pending", "Crochet"],
+    "desc": "My current work in progress."
+  },
+    {
+    "id": "james",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "James",
+    "author": "Percival Everrett",
+    "img": "assets/images/james.png",
+    "cover": "assets/images/james_cover.png",
+    "rating": 5,
+    "desc": "Satirical take on the classic Adventures of Hucklesberry Finn. An important perspective of our nation's history that has been pushed away for too long."
+  },
+  {
+    "id": "martyr",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "Martyr!",
+    "author": "Kaveh Akbar",
+    "img": "assets/images/martyr.jpg",
+    "cover": "assets/images/martyr_cover.jpg",
+    "rating": 4,
+    "desc": "Addiction and Grief. Finding meaning and purpose in the little time we have."
+  },
+  {
+    "id": "bug",
+    "type": "craft",
+    "tag": "Fiber arts · Filet Crochet",
+    "title": "Filet crochet bug",
+    "img": "assets/images/crochet_Bug2.jpeg",
+    "meta": ["Cotton", "~2 hrs", "Crochet"],
+    "desc": "A quick design that plays with negative space. Filet crochet turns a simple grid into a picture. What you leave empty matters as much as what you fill in."
+  },
+  {
+    "id": "foundation",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "img": "assets/images/foundation.jpg",
+    "cover": "assets/images/foundation_cover.jpg",
+    "rating": 2,
+    "desc": "The TV series ruin the book for me :/"
+  },
+  {
+    "id": "monstrilio",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "Monstrilio",
+    "author": "Gerardo Sámano Córdova",
+    "img": "assets/images/monstrilio.jpg",
+    "cover": "assets/images/monstrilio_cover.jpg",
+    "rating": 4,
+    "desc": "Weird but oddly comforting display of handling grief."
+  },
+  {
+    "id": "sweater",
+    "type": "craft",
+    "tag": "Fiber arts · Knitting",
+    "title": "Step by step sweater",
+    "img": "assets/images/sweater.jpeg",
+    "meta": ["Wool", "Several weeks", "Knit"],
+    "desc": "Didn't fit as intended, but good practice. Sometimes the point is the process, not the product."
+  },
+  {
+    "id": "just kids",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "Just Kids",
+    "author": "Patti Smith",
+    "img": "assets/images/justkids.jpg",
+    "cover": "assets/images/justkids_cover.jpg",
+    "rating": 4,
+    "desc": "Beautiful story of navigating early adulthood in NYC as an artist."
+  },
+  {
+    "id": "blanket",
+    "type": "craft",
+    "tag": "Fibert arts · Crochet",
+    "title": "Granny Square Blanket",
+    "img": "assets/images/blanket.jpeg",
+    "meta": ["Acrylic Wool Blend", "Several Weeks", "Crochet"],
+    "desc": "A project that took longer than expected"
+  }
+]
