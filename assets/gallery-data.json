@@ -9,6 +9,26 @@
     "desc": "My current work in progress."
   },
     {
+    "id": "star_hat",
+    "type": "craft",
+    "tag": "Fibert arts · Knitting",
+    "title": "Work in Progress",
+    "img": "assets/images/star_hat.jpeg",
+    "meta": ["Wool", "Pending", "Knitting"],
+    "desc": "My current work in progress."
+  },  
+    {
+    "id": "intermezzo",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "Intermezzo",
+    "author": "Sally Rooney",
+    "img": "assets/images/intermezzo.jpg",
+    "cover": "assets/images/intermezzo_cover.jpg",
+    "rating": 0,
+    "desc": "Currently Reading"
+  },  
+    {
     "id": "james",
     "type": "book",
     "tag": "Reading · 2026",
