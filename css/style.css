@@ -21,7 +21,7 @@
   --gold-muted:  rgba(74, 127, 165, 0.12);
   --gold-border: rgba(74, 127, 165, 0.28);
 
-  --font-serif: 'Playfair Display', 'Georgia', serif;
+  --font-serif: 'Fraunces', 'Georgia', serif;
   --font-sans:  'DM Sans', system-ui, sans-serif;
   --font-mono:  'DM Mono', 'Courier New', monospace;
 
@@ -855,7 +855,23 @@ em { font-style: italic; }
   box-shadow: var(--shadow-sm);
 }
 .project-card.visible { opacity: 1; transform: translateY(0); }
-.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); }
+.project-card:hover,
+a.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); }
+
+a.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.github-icon {
+  color: var(--gray-300);
+}
+.project-card.featured .github-icon {
+  color: rgba(255,255,255,0.3);
+}
+
 
 /* Featured card — dark */
 .project-card.featured {
@@ -879,8 +895,6 @@ em { font-style: italic; }
 .project-card.featured p { color: rgba(255,255,255,0.45); }
 .project-card.featured .project-number { color: rgba(255,255,255,0.06); }
 .project-card.featured .project-category { color: var(--gold-light); }
-.project-card.featured .project-links a { color: rgba(255,255,255,0.3); }
-.project-card.featured .project-links a:hover { color: var(--gold-light); }
 .project-card.featured .project-tech span {
   border-color: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.45);
@@ -910,11 +924,7 @@ em { font-style: italic; }
   color: var(--gold-dark);
 }
 .project-links { display: flex; gap: 14px; }
-.project-links a {
-  color: var(--gray-300);
-  transition: color var(--transition), transform var(--transition);
-}
-.project-links a:hover { color: var(--black); transform: scale(1.15); }
+
 .project-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
