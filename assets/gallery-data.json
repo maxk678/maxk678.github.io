@@ -16,18 +16,51 @@
     "img": "assets/images/star_hat.jpeg",
     "meta": ["Wool", "Pending", "Knitting"],
     "desc": "My current work in progress."
-  },  
-    {
-    "id": "intermezzo",
+  },   
+      {
+    "id": "American War",
     "type": "book",
     "tag": "Reading · 2026",
-    "title": "Intermezzo",
-    "author": "Sally Rooney",
-    "img": "assets/images/intermezzo.jpg",
-    "cover": "assets/images/intermezzo_cover.jpg",
+    "title": "American War",
+    "author": "Omar El Akkad",
+    "img": "assets/images/americanwar.jpg",
+    "cover": "assets/images/americanwar_cover.jpg",
     "rating": 0,
     "desc": "Currently Reading"
   },  
+      {
+    "id": "Demon Copperhead",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "Demon Copperhead",
+    "author": "Barbara Kingsolver",
+    "img": "assets/images/demon.jpg",
+    "cover": "assets/images/demon_cover.jpg",
+    "rating": 0,
+    "desc": "Currently Reading"
+  },  
+      {
+    "id": "One Day, Everyone Will Have Always Been Against This",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "One Day, Everyone Will Have Always Been Against This",
+    "author": "Omar El Akkad",
+    "img": "assets/images/against.jpg",
+    "cover": "assets/images/against_cover.jpg",
+    "rating": 4,
+    "desc": "Critique of Western Liberalism and hypocrisy. An eyeopener to the reality of the world we live in"
+  },  
+      {
+    "id": "Underground Railroad",
+    "type": "book",
+    "tag": "Reading · 2026",
+    "title": "Underground Railroad",
+    "author": "Colson Whitehead",
+    "img": "assets/images/railroad.jpg",
+    "cover": "assets/images/railroad_cover.jpg",
+    "rating": 5,
+    "desc": ""
+  }, 
     {
     "id": "james",
     "type": "book",
